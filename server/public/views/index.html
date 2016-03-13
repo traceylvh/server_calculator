@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weekend Challenge 3</title>
+
+    <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Server Calculator</h1>
+
+      <div class="form-style">
+        <form id="calculator-form">
+          <p>
+              <label for="firstnumber">Enter First Number</label>
+              <input type="text" id="firstnumber" name="firstnumber" placeholder="First Number" />
+          </p>
+
+          <p>
+              <label for="secondnumber">Enter Second Number</label>
+              <input type="text" id="secondnumber" name="secondnumber" placeholder="Second Number" />
+          </p>
+
+            <p>
+                <input type="radio" name="operand" value="add"> Add<br />
+                <input type="radio" name="operand" value="subtract"> Subtract<br />
+                <input type="radio" name="operand" value="multiply"> Multiply<br />
+                <input type="radio" name="operand" value="divide"> Divide
+            </p>
+
+            <p>
+              <input type="submit" value="Submit" class="btn btn-primary" />
+            </p>
+
+        </form>
+
+
+      </div>
+      <div class="results">
+        <h2>Answer: <span class="answer"></span></h2>
+
+        <button class="btn-clear btn btn-success">Clear</button>
+      </div>
+
+
+    </div>
+
+
+  </body>
+</html>
