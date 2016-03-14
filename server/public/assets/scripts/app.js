@@ -80,11 +80,14 @@ function appendAnswer(){
     break;
   };
 
-  $('.answer').text(enteredValues.firstnumber + " " + symbol + " " + enteredValues.secondnumber
-  + " = " + finalAnswer);
+  $('.inputNumbers').text(enteredValues.firstnumber + " " + symbol + " " + enteredValues.secondnumber);
+
+  $('.answer').text(" = " + finalAnswer);
+
 }
 
 //function to clear the answer when the clear button is clicked
 function clearAnswer(){
+  $('.inputNumbers').text("");
   $('.answer').text("");
 }

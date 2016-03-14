@@ -1,0 +1,36 @@
+/* Background pattern from subtlepatterns.com */
+body {
+    background-image: url("/assets/images/noisy_grid.png");
+}
+
+h1 {
+  text-align: center;
+  /*font-family: 'Over the Rainbow', serif;*/
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: 'Over the Rainbow', serif;
+  line-height: 140%;
+  margin-top: 10px;
+}
+
+.container {
+  background-color: #fff;
+  /*opacity: .5;*/
+  padding: 20px;
+  box-shadow: -2px 2px 5px #C0C0C0;
+}
+
+.radios {
+  width: 50px;
+}
+
+.btn-clear {
+  background-color: pink;
+}
+
+.btn-enter {
+  background-color: #e7eeeb;
+}
