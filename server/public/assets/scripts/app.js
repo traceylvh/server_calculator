@@ -43,12 +43,13 @@ function handleSubmit(event){
 //let's experiment with POST
 function sendData(){
   //didn't work to pass enteredValues straight in, but putting it in testObject did ???
-  var testObject = enteredValues;
+  // var testObject = enteredValues;
+  //fixed
 
   $.ajax({
     type: "POST",
     url: "/inputs",
-    data: testObject,
+    data: enteredValues,
     success: function(answer){
       // console.log(answer.response);
       finalAnswer = answer.response;
