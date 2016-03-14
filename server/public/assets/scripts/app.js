@@ -26,8 +26,9 @@ function handleSubmit(event){
   });
 
   //clear the form
-  $('#calculator-form').find('input[type=text]').val('');
-  $('[name=operand]').removeAttr('checked');
+  //move to clearAnswer
+  // $('#calculator-form').find('input[type=text]').val('');
+  // $('[name=operand]').removeAttr('checked');
 
   // inputArray.push(enteredValues);
   // console.log(inputArray);
@@ -89,6 +90,9 @@ function appendAnswer(){
 
 //function to clear the answer when the clear button is clicked
 function clearAnswer(){
+  enteredValues = {}
+  $('#calculator-form').find('input[type=text]').val('');
+  $('[name=operand]').removeAttr('checked');
   $('.inputNumbers').text("");
   $('.answer').text("");
 }
