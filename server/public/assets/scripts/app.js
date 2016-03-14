@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   $('#calculator-form').on('submit', handleSubmit);
   $('.btn-clear').on('click', clearAnswer);
+  $('.theMaths').on('click', addOp);
 
 
 });
@@ -16,6 +17,9 @@ var inputArray = [];
 //var for final answer
 var finalAnswer = 0;
 
+//var for the chosen operand
+var operandPicked;
+
 
 function handleSubmit(event){
   event.preventDefault();
@@ -24,6 +28,9 @@ function handleSubmit(event){
   $.each($('#calculator-form').serializeArray(), function(i, field){
   enteredValues[field.name] = field.value;
   });
+
+  //add operand button to array
+
 
   //clear the form
   //move to clearAnswer
@@ -58,6 +65,12 @@ function sendData(){
       appendAnswer();
     }
   });
+}
+
+//add operand button to array
+function addOp(){
+  operandPicked = $(this).data('id');
+  enteredValues.operand = operandPicked;
 }
 
 

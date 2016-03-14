@@ -23,6 +23,24 @@ h2 {
   box-shadow: -2px 2px 5px #C0C0C0;
 }
 
+.form-style {
+  width: 350px;
+}
+
+.theMaths {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  background-color: #088FBD;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.opButtons {
+  float: right;
+}
+
 .radios {
   width: 50px;
 }
